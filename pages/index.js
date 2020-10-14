@@ -19,9 +19,9 @@ const Movies = ({ movies }) => {
   return (
     <Layout>
       <div className="movies">
-        <ul className="list">
+        <div className="list">
           {movies.map(movie => (
-            <li key={movie._id} className="list__item">
+            <div key={movie._id} className="movie_padding">
               <Link href="/movie/[id]" as={`/movie/${movie._id}`}>
                 <a>
                   {movie.poster && (
@@ -33,20 +33,20 @@ const Movies = ({ movies }) => {
                       height={100 / movie.posterAspect}
                     />
                   )}
-                  <div style={{ paddingTop: "0.2em" }}>
+                  <div style={{ paddingTop: "0.2em",color:"rgba(255,255,255,1)" }} >
                     {movie.releaseDate.substr(0, 4)}
                   </div>
-                  <h3>{movie.title}</h3>
+                  <h3 style={{color:"rgba(255,255,255,1)" }}>{movie.title}</h3>
                   {movie.director && (
-                    <span className="movies-list__directed-by">
+                    <span style={{color:"rgba(255,255,255,1)" }} className="movies-list__directed-by">
                       Directed by {movie.director}
                     </span>
                   )}
                 </a>
               </Link>
-            </li>
+            </div>
           ))}
-        </ul>
+        </div>
       </div>
       <style jsx>{`
         .movies {

@@ -5,9 +5,9 @@ export default css`
   .list {
     display: grid;
     margin: 0;
-    padding: 0;
+    padding: 5%;
     grid-gap: 1rem;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(23%, 1fr));
   }
 
   .list > li {
@@ -16,8 +16,12 @@ export default css`
     padding: 0;
     display: flex;
     align-items: stretch;
+    color:white;
   }
-
+  .movie_padding{
+  padding:inherit;
+  color:white;
+  }
   .list a {
     text-decoration: none;
     display: block;

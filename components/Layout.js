@@ -8,20 +8,30 @@ export default function Layout(props) {
       <Head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Sanity + Next.js = 💖</title>
+        <title>POST UI</title>
       </Head>
       <nav>
-        <Link href="/">
+      <div className="a144_92">
+          <span className="a133_780">Try artist, date, genre or venue</span>
+        </div>
+        <div className="a135_24">
+              <span className="a133_812">Shows</span>
+              <span className="a133_813">Editorial</span>
+              <div className="a133_835">
+                <span className="a133_814">Saved</span>
+              </div>
+        </div>
+        {/* <Link href="/">
           <a>Movies</a>
         </Link>
         <Link href="/people">
           <a>People</a>
-        </Link>
+        </Link> */}
       </nav>
-      <GithubCorner />
+      {/* <GithubCorner /> */}
       <div id="main">{props.children}</div>
       <footer>
-        <a href="http://sanity.io">
+        {/* <a href="http://sanity.io">
           <img src="/sanity-logo.svg" alt="Sanity Logo" />
         </a>
         +
@@ -31,7 +41,7 @@ export default function Layout(props) {
             src="/nextjs-logo.svg"
           />
         </a>
-        = 💖
+        = 💖 */}
       </footer>
       <style jsx>{`
         footer {
@@ -65,9 +75,115 @@ export default function Layout(props) {
           text-decoration: none;
           text-align: center;
         }
+        .a144_92 {
+          width: 271px;
+          height: 29px;
+          background: url("../images/a144_92.png");
+          background-repeat: no-repeat;
+          background-position: center center;
+          background-size: cover;
+          opacity: 1;
+          position: relative;
+          top: 0px;
+          left: 0px;
+          overflow: hidden;
+        }
+
+        .a133_811 {
+          width: 15px;
+          height: 21px;
+          background: url("../images/a133_811.png");
+          background-repeat: no-repeat;
+          background-position: center center;
+          background-size: cover;
+          opacity: 1;
+          position: absolute;
+          top: 14px;
+          left: 0px;
+          transform: rotate(-45deg);
+          overflow: hidden;
+        }
+        .a133_780 {
+          width: 242px;
+          color: rgba(255,255,255,1);
+          position: absolute;
+          top: 0px;
+          left: 29px;
+          font-family: Poppins;
+          font-weight: Regular;
+          font-size: 16px;
+          opacity: 0.4000000059604645;
+          text-align: left;
+        }
+        .a135_24 {
+          width: 250px;
+          height: 31px;
+          background: url("../images/a135_24.png");
+          background-repeat: no-repeat;
+          background-position: center center;
+          background-size: cover;
+          opacity: 1;
+          position: relative;
+          top: 0px;
+          right: -37%;
+          overflow: hidden;
+        }
+        
+        .a133_812 {
+          width: 52px;
+          color: rgba(241,87,58,1);
+          position: relative;
+          top: 0px;
+          left: 0px;
+          font-family: Poppins;
+          font-weight: Regular;
+          font-size: 16px;
+          opacity: 1;
+          text-align: right;
+        } 
+
+        .a133_813 {
+          width: 64px;
+          color: rgba(255,255,255,1);
+          position: absolute;
+          top: 0px;
+          left: 82px;
+          font-family: Poppins;
+          font-weight: Regular;
+          font-size: 16px;
+          opacity: 1;
+          text-align: right;
+        }
+
+        .a133_835 {
+          width: 74px;
+          height: 29px;
+          background: url("../images/a133_835.png");
+          background-repeat: no-repeat;
+          background-position: center center;
+          background-size: cover;
+          opacity: 1;
+          position: absolute;
+          top: 0px;
+          left: 176px;
+          overflow: hidden;
+        }
+        .a133_814 {
+          width: 50px;
+          color: rgba(255,255,255,1);
+          position: absolute;
+          top: 0px;
+          left: 25px;
+          font-family: Poppins;
+          font-weight: Regular;
+          font-size: 16px;
+          opacity: 1;
+          text-align: right;
+        }
       `}</style>
       <style jsx global>{`
         body {
+          background-color:#1c1c1c;
           margin: 0;
           font-family: "Avenir", Helvetica, Arial, sans-serif;
           -webkit-font-smoothing: antialiased;
