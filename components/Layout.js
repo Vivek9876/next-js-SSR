@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Link from "next/link";
 import GithubCorner from "./GithubCorner";
+import Footer from '../shared/Footer/footer';
 
 export default function Layout(props) {
   return (
@@ -31,6 +32,7 @@ export default function Layout(props) {
       {/* <GithubCorner /> */}
       <div id="main">{props.children}</div>
       <footer>
+        <Footer />
         {/* <a href="http://sanity.io">
           <img src="/sanity-logo.svg" alt="Sanity Logo" />
         </a>
