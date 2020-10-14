@@ -4,6 +4,7 @@ import Layout from "../components/Layout";
 import sanity from "../lib/sanity";
 import listStyles from "../styles/list";
 import imageUrlFor from "../utils/imageUrlFor";
+import Filters from "../shared/filter/filter";
 
 const query = `*[_type == "movie"] {
   _id,
@@ -18,6 +19,9 @@ const query = `*[_type == "movie"] {
 const Movies = ({ movies }) => {
   return (
     <Layout>
+      <div>
+        <Filters />
+      </div>
       <div className="movies">
         <div className="list">
           {movies.map(movie => (
@@ -33,12 +37,12 @@ const Movies = ({ movies }) => {
                       height={100 / movie.posterAspect}
                     />
                   )}
-                  <div style={{ paddingTop: "0.2em",color:"rgba(255,255,255,1)" }} >
+                  <div style={{ paddingTop: "0.2em", color: "rgba(255,255,255,1)" }} >
                     {movie.releaseDate.substr(0, 4)}
                   </div>
-                  <h3 style={{color:"rgba(255,255,255,1)" }}>{movie.title}</h3>
+                  <h3 style={{ color: "rgba(255,255,255,1)" }}>{movie.title}</h3>
                   {movie.director && (
-                    <span style={{color:"rgba(255,255,255,1)" }} className="movies-list__directed-by">
+                    <span style={{ color: "rgba(255,255,255,1)" }} className="movies-list__directed-by">
                       Directed by {movie.director}
                     </span>
                   )}

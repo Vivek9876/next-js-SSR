@@ -19,7 +19,7 @@ export default function Layout(props) {
               <span className="a133_812">Shows</span>
               <span className="a133_813">Editorial</span>
               <div className="a133_835">
-                <span className="a133_814">Saved</span>
+                <span className="a133_814">💖 Saved</span>
               </div>
         </div>
         {/* <Link href="/">

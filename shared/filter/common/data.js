@@ -1,0 +1,2 @@
+export const typeName = ['ACOUSTIC/SOLO', 'ALTERNATIVE', 'ART/NOICE', 'BLUES', 'CLASSICAL']
+export const cityName = ['NATIONWIDE', 'AUCKLAND', 'BAY-OF-PANELTY', 'CANTERBURRY', 'CENTRAL OTAGO']
