@@ -1,5 +1,4 @@
 import React from "react";
-import Link from "next/link";
 import BlockContent from "@sanity/block-content-to-react";
 import Layout from "../../components/Layout";
 import sanity from "../../lib/sanity";
@@ -97,16 +96,11 @@ const Movie = ({ movie }) => {
     <Layout>
       <div className="movie">
         <div
-          className="header"
-          style={{
-            backgroundImage: `url(${imageUrlFor(movie.poster)})`,
-            backgroundPosition: `${(hotspot.x - crop.left) *
-              100}% ${(hotspot.y - crop.top) * 100}%`
-          }}
+          className="header" 
         >
-          <div className="header-content">
+          {/* <div className="header-content">
             <h1>{movie.title}</h1>
-          </div>
+          </div> */}
         </div>
 
         <div className="content">
@@ -128,7 +122,7 @@ const Movie = ({ movie }) => {
                 projectId={sanity.clientConfig.projectId}
               />
             </div>
-            <h2>Cast</h2>
+            {/* <h2>Cast</h2>
             <ul className="cast-list">
               {movie.cast.map(cast => (
                 <li key={cast._key} className="cast-list-item">
@@ -151,7 +145,7 @@ const Movie = ({ movie }) => {
                   </Link>
                 </li>
               ))}
-            </ul>
+            </ul> */}
           </div>
         </div>
       </div>
@@ -165,7 +159,12 @@ const Movie = ({ movie }) => {
         }
 
         .overview {
-          font-size: 1.5em;
+          color:white;
+          font-family: Poppins;
+          font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 182.
         }
 
         .sidebar {
