@@ -1,153 +1,42 @@
 import React from "react";
-import BlockContent from "@sanity/block-content-to-react";
 import Layout from "../../components/Layout";
-import sanity from "../../lib/sanity";
 import listStyles from "../../styles/list";
-import imageUrlFor from "../../utils/imageUrlFor";
+import { useRouter } from 'next/router';
+import { concertData } from '../../data/data';
 
-const moviesQuery = `*[_type == "movie"] { _id }`;
-
-const singleMovieQuery = `*[_type == "movie" && _id == $id] {
-  _id,
-  title,
-  overview,
-  releaseDate,
-  poster,
-  "cast": castMembers[] {
-    _key,
-    characterName,
-    "person": person-> {
-      _id,
-      name,
-      image
-    }
-  }
-}[0]
-`;
-
-const serializers = {
-  types: {
-    summaries: props => {
-      const { node } = props;
-      if (!node) {
-        return false;
-      }
-      const { summaries } = node;
-      if (!summaries || summaries.length === 0) {
-        return false;
-      }
-      return (
-        <div className="summaries">
-          <h2>{node.caption}</h2>
-          <ul>
-            {summaries.map(summary => {
-              return (
-                <li key={summary._key}>
-                  <BlockContent
-                    blocks={summary.summary}
-                    serializers={serializers}
-                  />
-                  — <a href={summary.url}>{summary.author}</a>
-                </li>
-              );
-            })}
-          </ul>
-          <style jsx>{`
-            .summaries {
-              clear: both;
-              padding: 2em 0 2em;
-            }
-
-            .summaries :global(ul) {
-              margin: 0;
-              padding: 0;
-            }
-
-            .summaries :global(li) {
-              display: block;
-              margin: 0 0 1em;
-              padding: 1em 0 2em;
-            }
-
-            .summaries :global(li:not(:last-child)) {
-              border-bottom: 1px solid #ccc;
-            }
-
-            .summaries {
-              clear: both;
-              padding: 2em 0 2em;
-            }
-
-            .summaries :global(li:not(:last-child)) {
-              border-bottom: 1px solid #ccc;
-            }
-          `}</style>
-        </div>
-      );
-    }
-  }
-};
-
-const Movie = ({ movie }) => {
-  const {
-    poster: { crop = { left: 0, top: 0 }, hotspot = { x: 0.5, y: 0.5 } }
-  } = movie;
+const Movie = () => {
+  const router = useRouter()
+  const movie = concertData.find((item) => item._id == router.query.id);
   return (
     <Layout>
       <div className="movie">
         <div
-          className="header" 
+          className="header"
         >
-          {/* <div className="header-content">
-            <h1>{movie.title}</h1>
-          </div> */}
         </div>
-
-        <div className="content">
-          <div className="sidebar">
-            <img
+        {movie &&
+          <div className="content">
+            <div className="sidebar">
+              {/* <img
               className="poster"
               src={imageUrlFor(movie.poster)
                 .ignoreImageParams()
                 .width(500)}
               alt={`Movie poster for ${movie.title}`}
-            />
-          </div>
-          <div className="main-content">
-            <div className="overview">
-              <BlockContent
-                blocks={movie.overview}
-                serializers={serializers}
-                dataset={sanity.clientConfig.dataset}
-                projectId={sanity.clientConfig.projectId}
-              />
+            /> */}
+              {/* <img src={movie.imageUrl} /> */}
+              {movie.name}
+              {movie.city}
+              {movie.state}
+              {movie.time}
+              {movie.type}
+              {movie.description}
+              {movie.hold}
+              {movie.price}
+              {movie.presentBy}
+              {movie.date}
             </div>
-            {/* <h2>Cast</h2>
-            <ul className="cast-list">
-              {movie.cast.map(cast => (
-                <li key={cast._key} className="cast-list-item">
-                  <Link href="/person/[id]" as={`/person/${cast.person._id}`}>
-                    <a className="cast-list-link">
-                      <span>
-                        {cast.person.image && (
-                          <img src={imageUrlFor(cast.person.image).width(64)} />
-                        )}
-                      </span>
-                      <span>
-                        <span className="cast-person-name">
-                          {cast.person.name}
-                        </span>
-                        <span className="cast-character-name">
-                          {cast.characterName}
-                        </span>
-                      </span>
-                    </a>
-                  </Link>
-                </li>
-              ))}
-            </ul> */}
-          </div>
-        </div>
+          </div>}
       </div>
       <style jsx>{`
         .content {
@@ -365,24 +254,6 @@ const Movie = ({ movie }) => {
       <style jsx>{listStyles}</style>
     </Layout>
   );
-};
-
-export const getStaticPaths = async () => {
-  // Get the paths we want to pre-render based on persons
-  const movies = await sanity.fetch(moviesQuery);
-  const paths = movies.map(movie => ({
-    params: { id: movie._id }
-  }));
-
-  // We'll pre-render only these paths at build time.
-  // { fallback: false } means other routes should 404.
-  return { paths, fallback: false };
-};
-
-// This function gets called at build time on server-side.
-export const getStaticProps = async ({ params }) => {
-  const movie = await sanity.fetch(singleMovieQuery, { id: params.id });
-  return { props: { movie } };
 };
 
 export default Movie;
