@@ -28,3 +28,18 @@ export const concertData = [
         imageUrl: '../data/nextImag/Khaliana.png'
     }
 ]
+
+export const eventTime = [
+    {
+        date: "SAT 01 AUG",
+        concert: [concertData[0], concertData[1]]
+    },
+    {
+        date: "SAT 02 AUG",
+        concert: [concertData[0], concertData[1]]
+    },
+    {
+        date: "SAT 03 AUG",
+        concert: [concertData[0]]
+    }
+]

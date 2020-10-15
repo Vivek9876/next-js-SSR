@@ -4,11 +4,13 @@ import Genres from "./component/geners"
 import Regions from "./component/regions"
 import Dates from "./component/dates"
 import Tags from "./common/tags";
+import Link from "next/link";
+
 const Filters = () => {
 
     return (
         <>
-            <div className=""> 
+            <div className="">
                 <div className="v136_0 genres_regions_dates col-md-6">
                     <Genres />
                     <Regions />
@@ -17,19 +19,23 @@ const Filters = () => {
                 <div className="v136_2 col-md-6">
                     <span className="v135_114">Sort by: Date</span>
                     <div className="v135_142">
-                        <div className="v144_111">
-                            <span className="v135_115" style={{ color: "white" }}>Grid  </span>
-                            <div className="v135_129">
-                                <div className="v135_123"></div>
-                                <div className="v135_126"></div>
-                                <div className="v135_124"></div>
-                                <div className="v135_127"></div>
-                                <div className="v135_125"></div>
-                                <div className="v135_128"></div>
+                        <Link href="/">
+                            <div className="v144_111">
+                                <span className="v135_115" style={{ color: "white" }}>Grid  </span>
+                                <div className="v135_129">
+                                    <div className="v135_123"></div>
+                                    <div className="v135_126"></div>
+                                    <div className="v135_124"></div>
+                                    <div className="v135_127"></div>
+                                    <div className="v135_125"></div>
+                                    <div className="v135_128"></div>
+                                </div>
                             </div>
-                        </div>
+                        </Link>
                         <div className="v158_576">
-                            <span className="v135_116">Schedule</span>
+                            <Link href="/schedule">
+                                <span className="v135_116">Schedule</span>
+                            </Link>
                             <div className="v271_5125">
                                 <div className="v271_5126">
                                     <div className="v271_5127"></div>
@@ -42,10 +48,10 @@ const Filters = () => {
                         </div>
                     </div>
                 </div>
-                
-           </div> 
-           <div className="tags">
-                
+
+            </div>
+            <div className="tags">
+
                 <Tags />
                 {/* <span className="a133_814">💖 SAVE THIS SEARCH</span> */}
             </div>
