@@ -2,6 +2,7 @@ import Head from "next/head";
 import Link from "next/link";
 import GithubCorner from "./GithubCorner";
 import Footer from '../shared/Footer/footer';
+import Search from './globalSearch';
 // import "bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -11,20 +12,19 @@ export default function Layout(props) {
       <Head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        {/* <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"/> */}
         <title>POST UI</title>
       </Head>
       <div className="col-md-12">
-        {/* <button type="button" className="btn btn-success">Success</button> */}
-      <div className="col-md-6 try">
-          <span className="a133_780">Try artist, date, genre or venue</span>
+        <div className="col-md-6 try">
+          {/* <span className="a133_780">Try artist, date, genre or venue</span> */}
+          <Search />
         </div>
         <div className="col-md-6 shows">
-              <span className="a133_812">Shows</span>
-              <span className="a133_813">Editorial</span>
-              <div className="a133_835">
-                <span className="">💖</span><span style={{color:"white"}}> Saved</span>
-              </div>
+          <span className="a133_812">Shows</span>
+          <span className="a133_813">Editorial</span>
+          <div className="a133_835">
+            <span className="">💖</span><span style={{ color: "white" }}> Saved</span>
+          </div>
         </div>
         {/* <Link href="/">
           <a>Movies</a>
