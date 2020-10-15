@@ -8,8 +8,8 @@ const Filters = () => {
 
     return (
         <>
-            <div className="v138_0">
-                <div className="v136_0 col-md-6">
+            <div className=""> 
+                <div className="v136_0 genres_regions_dates col-md-6">
                     <Genres />
                     <Regions />
                     <Dates />
@@ -36,16 +36,18 @@ const Filters = () => {
                                 </div>
                             </div>
                             <div className="v135_141">
-                                <div className="v144_110">
+                                <div className="fa fa-calendar" aria-hidden="true">
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div>
+                
+           </div> 
+           <div className="tags">
+                
                 <Tags />
-                <span className="a133_814">💖 SAVE THIS SEARCH</span>
+                {/* <span className="a133_814">💖 SAVE THIS SEARCH</span> */}
             </div>
             <style jsx>{FilterStyle}</style>
         </>

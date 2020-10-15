@@ -55,6 +55,7 @@ const Movies = ({ movies }) => {
       <style jsx>{`
         .movies {
           padding: 1rem;
+          margin-top:-3%;
         }
         .movies-list__directed-by {
           display: block;
