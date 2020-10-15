@@ -17,7 +17,7 @@ const useStyles = makeStyles((theme) => ({
     },
 }));
 
-const Tags = () => {
+const Tags =  () => {
     const classes = useStyles();
     const [chipData, setChipData] = React.useState([
         { key: 0, label: 'Folk' },
@@ -29,22 +29,27 @@ const Tags = () => {
     };
 
     return (
-        <Paper component="ul" className={classes.root}>
+        <ul className="abc">
             {chipData.map((data) => {
                 let icon;
                 return (
-                    <li key={data.key}>
-                        <Chip
+                    <li key={data.key} className="d-inline-block" style={{color:"#f1573a"}}>
+                        <div
                             icon={icon}
-                            label={data.label}
                             onDelete={data.label === 'React' ? undefined : handleDelete(data)}
-                            className={classes.chip}
-                        />
+                        >{data.label}<button type="button" className="close" aria-label="Close" style={{color:"#f1573a"}}>
+                        <span aria-hidden="true">&times;</span>
+                      </button></div>
                     </li>
                 );
             })}
-        </Paper>
+            <span className="a133_814 d-inline-block" style={{color:"#f1573a"}}>💖 SAVE THIS SEARCH</span>
+        </ul>
     );
 }
-
+<style jsx>{`
+.abc{
+    margin-top:10%;
+}
+`}</style>
 export default Tags;

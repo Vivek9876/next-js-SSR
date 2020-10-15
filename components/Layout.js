@@ -2,6 +2,8 @@ import Head from "next/head";
 import Link from "next/link";
 import GithubCorner from "./GithubCorner";
 import Footer from '../shared/Footer/footer';
+// import "bootstrap";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 export default function Layout(props) {
   return (
@@ -9,17 +11,19 @@ export default function Layout(props) {
       <Head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        {/* <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"/> */}
         <title>POST UI</title>
       </Head>
-      <nav>
-      <div className="a144_92">
+      <div className="col-md-12">
+        {/* <button type="button" className="btn btn-success">Success</button> */}
+      <div className="col-md-6 try">
           <span className="a133_780">Try artist, date, genre or venue</span>
         </div>
-        <div className="a135_24">
+        <div className="col-md-6 shows">
               <span className="a133_812">Shows</span>
               <span className="a133_813">Editorial</span>
               <div className="a133_835">
-                <span className="a133_814">💖 Saved</span>
+                <span className="">💖</span><span style={{color:"white"}}> Saved</span>
               </div>
         </div>
         {/* <Link href="/">
@@ -28,7 +32,7 @@ export default function Layout(props) {
         <Link href="/people">
           <a>People</a>
         </Link> */}
-      </nav>
+      </div>
       {/* <GithubCorner /> */}
       <div id="main">{props.children}</div>
       <footer>
@@ -51,7 +55,14 @@ export default function Layout(props) {
           text-align: center;
           font-size: 2rem;
         }
-
+        .shows{
+          display:block;
+          left:60%;
+        }
+        .try{
+          display:block;
+          left:19%;
+        }
         footer img {
           display: inline-block;
           height: 1em;
@@ -66,7 +77,7 @@ export default function Layout(props) {
           top: 0;
           left: 0;
           width: 100%;
-          background-color: #333;
+          background-color: #1c1c1c;
           font-size: 1rem;
           height: 3.5rem;
         }
@@ -85,8 +96,8 @@ export default function Layout(props) {
           background-position: center center;
           background-size: cover;
           opacity: 1;
-          position: relative;
-          top: 0px;
+          position: absolute;
+          top: 8%;
           left: 0px;
           overflow: hidden;
         }
@@ -125,9 +136,9 @@ export default function Layout(props) {
           background-position: center center;
           background-size: cover;
           opacity: 1;
-          position: relative;
-          top: 0px;
-          right: -37%;
+          position: absolute;
+          top: -5%;
+          right: -30%;
           overflow: hidden;
         }
         
