@@ -28,11 +28,10 @@ const Movies = ({ movies }) => {
                   )} */}
                   <img src={movie.imageUrl} />
                   <div style={{ paddingTop: "0.2em", color: "rgba(255,255,255,1)" }} >
-                    {movie.name}
-                    {movie.date}
-                    {movie.city}
-                    {movie.state}
-                    {movie.type}
+                  <div className="movie_name"> {movie.name}</div>
+                      <div className="movie_date">  {movie.date}</div>
+                      <div className="address">  {movie.city},{movie.state}</div>
+                      <div className="movie_type"> {movie.type}</div>
                   </div>
                   {/* <h3 style={{ color: "rgba(255,255,255,1)" }}>{movie.title}</h3>
                   {movie.director && (
@@ -55,6 +54,42 @@ const Movies = ({ movies }) => {
           display: block;
           font-size: 1rem;
         }
+        .movie_name {
+          margin-bottom: 3%;
+          font-family: Poppins;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 20px;
+          line-height: 138.2%;
+          color: #FFFFFF;
+         }
+         .movie_date {
+          font-family: IBM Plex Mono;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 11px;
+          line-height: 13px;
+          text-transform: uppercase;
+          color: #FFFFFF;
+         }
+         .address {
+          font-family: IBM Plex Mono;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 11px;
+          line-height: 13px;
+          text-transform: uppercase;
+          color: #FFFFFF;
+         }
+         .movie_type {
+          font-family: IBM Plex Mono;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 13px;
+          line-height: 15px;
+          color: #F1573A;
+          margin-top: 5%;
+         }
       `}</style>
       <style jsx>{listStyles}</style>
     </Layout>

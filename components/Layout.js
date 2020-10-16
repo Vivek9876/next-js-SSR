@@ -195,6 +195,42 @@ export default function Layout(props) {
           color: #2c3e50;
           padding: 3.5rem 0 0;
         }
+        body {
+          background-color:#1c1c1c;
+          margin: 0;
+          font-family: "Avenir", Helvetica, Arial, sans-serif;
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+          color: #2c3e50;
+          padding: 3.5rem 0 0;
+          overflow-x:hidden;
+        }
+        .MuiPopover-paper.MuiPaper-elevation8 {
+          // top: 37% !important;
+          // max-width: 50% !important;
+          left: 6% !important;
+          position:relative;
+      }
+      .MuiPopover-paper{
+        top:31% !important
+      }
+      .MuiPaper-rounded{
+        max-width: 40% !important
+      }
+      .MuiFormControlLabel-root {
+        width: 32%;
+    }
+    .MuiAutocomplete-hasClearIcon .MuiAutocomplete-inputRoot {
+      color: white;
+  }
+  // .MuiSvgIcon-root {
+  //   color: white;
+  // }
+    .MuiTypography-body1 {
+      font-size: 0.8rem !important;
+      line-height: 1 !important;
+      margin-left: -8px !important;
+  }
       `}</style>
     </div>
   );

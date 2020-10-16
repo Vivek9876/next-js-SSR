@@ -8,7 +8,7 @@ export const concertData = [
         type: 'Folk',
         time: '8 pm',
         price: '$40.00',
-        description: 'This is owesome concert',
+        description: 'The music of Fortress Europe is the sound of the Europe you don\'t often hear about. Lands of vampires, vodka, pickled cabbage and strange superstitions. Frenzied fiddles from Romania, heart-breaking lamentations from Hungary and infectious rhythms from Serbia are all combined with jagged surf guitars, cinematic strings, thunderous bass, and an experimental, avant-garde sensibility.',
         presentBy: 'LIFE IS NOICE',
         hold: 'R18',
         imageUrl: 'https://www.tandfonline.com/doi/cover-img/10.1080/rseu20.v016.i03'
@@ -23,7 +23,7 @@ export const concertData = [
         type: 'Hip-hop',
         time: '8 pm',
         price: '$40.00',
-        description: 'This is owesome concert',
+        description: 'The music of Fortress Europe is the sound of the Europe you don\'t often hear about. Lands of vampires, vodka, pickled cabbage and strange superstitions. Frenzied fiddles from Romania, heart-breaking lamentations from Hungary and infectious rhythms from Serbia are all combined with jagged surf guitars, cinematic strings, thunderous bass, and an experimental, avant-garde sensibility.',
         presentBy: 'LIFE IS NOICE',
         hold: 'R18',
         imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQBBxKfPyoW5ZbOrvv3XPq3JX8vvAsaaHVE5g&usqp=CAU'
@@ -37,7 +37,7 @@ export const concertData = [
         type: 'Hip-hop',
         time: '8 pm',
         price: '$40.00',
-        description: 'This is owesome concert',
+        description: 'The music of Fortress Europe is the sound of the Europe you don\'t often hear about. Lands of vampires, vodka, pickled cabbage and strange superstitions. Frenzied fiddles from Romania, heart-breaking lamentations from Hungary and infectious rhythms from Serbia are all combined with jagged surf guitars, cinematic strings, thunderous bass, and an experimental, avant-garde sensibility.',
         presentBy: 'LIFE IS NOICE',
         hold: 'R18',
         imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR5T1KGcCT5ufcIAyHLKZZUmMC4avdEljdMcg&usqp=CAU'
@@ -51,7 +51,7 @@ export const concertData = [
         type: 'Hip-hop',
         time: '8 pm',
         price: '$40.00',
-        description: 'This is owesome concert',
+        description: 'The music of Fortress Europe is the sound of the Europe you don\'t often hear about. Lands of vampires, vodka, pickled cabbage and strange superstitions. Frenzied fiddles from Romania, heart-breaking lamentations from Hungary and infectious rhythms from Serbia are all combined with jagged surf guitars, cinematic strings, thunderous bass, and an experimental, avant-garde sensibility.',
         presentBy: 'LIFE IS NOICE',
         hold: 'R18',
         imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTilCvdt24Cf1-RA8CPdtFNp4OXV1uhxrhCFQ&usqp=CAU'
@@ -65,7 +65,7 @@ export const concertData = [
         type: 'Hip-hop',
         time: '8 pm',
         price: '$40.00',
-        description: 'This is owesome concert',
+        description: 'The music of Fortress Europe is the sound of the Europe you don\'t often hear about. Lands of vampires, vodka, pickled cabbage and strange superstitions. Frenzied fiddles from Romania, heart-breaking lamentations from Hungary and infectious rhythms from Serbia are all combined with jagged surf guitars, cinematic strings, thunderous bass, and an experimental, avant-garde sensibility.',
         presentBy: 'LIFE IS NOICE',
         hold: 'R18',
         imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTLyVPTmqFnnv_avYUdcNlErUDu6_oxVI8_gg&usqp=CAU'
@@ -79,7 +79,7 @@ export const concertData = [
         type: 'Hip-hop',
         time: '8 pm',
         price: '$40.00',
-        description: 'This is owesome concert',
+        description: 'The music of Fortress Europe is the sound of the Europe you don\'t often hear about. Lands of vampires, vodka, pickled cabbage and strange superstitions. Frenzied fiddles from Romania, heart-breaking lamentations from Hungary and infectious rhythms from Serbia are all combined with jagged surf guitars, cinematic strings, thunderous bass, and an experimental, avant-garde sensibility.',
         presentBy: 'LIFE IS NOICE',
         hold: 'R18',
         imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQHEQv-BLbJLRfzv9OZHQSBlY7ZIYmXFlcJHQ&usqp=CAU'
@@ -92,7 +92,7 @@ export const concertData = [
         type: 'Folk',
         time: '8 pm',
         price: '$40.00',
-        description: 'This is owesome concert',
+        description: 'The music of Fortress Europe is the sound of the Europe you don\'t often hear about. Lands of vampires, vodka, pickled cabbage and strange superstitions. Frenzied fiddles from Romania, heart-breaking lamentations from Hungary and infectious rhythms from Serbia are all combined with jagged surf guitars, cinematic strings, thunderous bass, and an experimental, avant-garde sensibility.',
         presentBy: 'LIFE IS NOICE',
         hold: 'R18',
         imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTfQLSWvuExZJFQCsOEt7ralMiiKbibzsJlIA&usqp=CAU'
@@ -107,7 +107,7 @@ export const concertData = [
         type: 'Hip-hop',
         time: '8 pm',
         price: '$40.00',
-        description: 'This is owesome concert',
+        description: 'The music of Fortress Europe is the sound of the Europe you don\'t often hear about. Lands of vampires, vodka, pickled cabbage and strange superstitions. Frenzied fiddles from Romania, heart-breaking lamentations from Hungary and infectious rhythms from Serbia are all combined with jagged surf guitars, cinematic strings, thunderous bass, and an experimental, avant-garde sensibility.',
         presentBy: 'LIFE IS NOICE',
         hold: 'R18',
         imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT8MJGhXQ0FCZH0aF2iQjImjN2gkplqCLxnKw&usqp=CAU'
@@ -121,7 +121,7 @@ export const concertData = [
         type: 'Hip-hop',
         time: '8 pm',
         price: '$40.00',
-        description: 'This is owesome concert',
+        description: 'The music of Fortress Europe is the sound of the Europe you don\'t often hear about. Lands of vampires, vodka, pickled cabbage and strange superstitions. Frenzied fiddles from Romania, heart-breaking lamentations from Hungary and infectious rhythms from Serbia are all combined with jagged surf guitars, cinematic strings, thunderous bass, and an experimental, avant-garde sensibility.',
         presentBy: 'LIFE IS NOICE',
         hold: 'R18',
         imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRupqFYXp2_L3vqkfvL0RwVC1mdTzsrBBNPPg&usqp=CAU'
@@ -135,7 +135,7 @@ export const concertData = [
         type: 'Hip-hop',
         time: '8 pm',
         price: '$40.00',
-        description: 'This is owesome concert',
+        description: 'The music of Fortress Europe is the sound of the Europe you don\'t often hear about. Lands of vampires, vodka, pickled cabbage and strange superstitions. Frenzied fiddles from Romania, heart-breaking lamentations from Hungary and infectious rhythms from Serbia are all combined with jagged surf guitars, cinematic strings, thunderous bass, and an experimental, avant-garde sensibility.',
         presentBy: 'LIFE IS NOICE',
         hold: 'R18',
         imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR_gRdYzJ0RMLUE_fw4jBCcpSlIcb0BoaOGig&usqp=CAU'
@@ -149,7 +149,7 @@ export const concertData = [
         type: 'Hip-hop',
         time: '8 pm',
         price: '$40.00',
-        description: 'This is owesome concert',
+        description: 'The music of Fortress Europe is the sound of the Europe you don\'t often hear about. Lands of vampires, vodka, pickled cabbage and strange superstitions. Frenzied fiddles from Romania, heart-breaking lamentations from Hungary and infectious rhythms from Serbia are all combined with jagged surf guitars, cinematic strings, thunderous bass, and an experimental, avant-garde sensibility.',
         presentBy: 'LIFE IS NOICE',
         hold: 'R18',
         imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTZ6Fz5OnRvBbcz92cWUz9HknrI65NIM8LUOg&usqp=CAU'
@@ -163,7 +163,7 @@ export const concertData = [
         type: 'Hip-hop',
         time: '8 pm',
         price: '$40.00',
-        description: 'This is owesome concert',
+        description: 'The music of Fortress Europe is the sound of the Europe you don\'t often hear about. Lands of vampires, vodka, pickled cabbage and strange superstitions. Frenzied fiddles from Romania, heart-breaking lamentations from Hungary and infectious rhythms from Serbia are all combined with jagged surf guitars, cinematic strings, thunderous bass, and an experimental, avant-garde sensibility.',
         presentBy: 'LIFE IS NOICE',
         hold: 'R18',
         imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQHEQv-BLbJLRfzv9OZHQSBlY7ZIYmXFlcJHQ&usqp=CAU'
@@ -188,7 +188,7 @@ export const similarData = [
         type: 'Hip-hop',
         time: '8 pm',
         price: '$40.00',
-        description: 'This is owesome concert',
+        description: 'The music of Fortress Europe is the sound of the Europe you don\'t often hear about. Lands of vampires, vodka, pickled cabbage and strange superstitions. Frenzied fiddles from Romania, heart-breaking lamentations from Hungary and infectious rhythms from Serbia are all combined with jagged surf guitars, cinematic strings, thunderous bass, and an experimental, avant-garde sensibility.',
         presentBy: 'LIFE IS NOICE',
         hold: 'R18',
         imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT8MJGhXQ0FCZH0aF2iQjImjN2gkplqCLxnKw&usqp=CAU'
@@ -202,7 +202,7 @@ export const similarData = [
         type: 'Hip-hop',
         time: '8 pm',
         price: '$40.00',
-        description: 'This is owesome concert',
+        description: 'The music of Fortress Europe is the sound of the Europe you don\'t often hear about. Lands of vampires, vodka, pickled cabbage and strange superstitions. Frenzied fiddles from Romania, heart-breaking lamentations from Hungary and infectious rhythms from Serbia are all combined with jagged surf guitars, cinematic strings, thunderous bass, and an experimental, avant-garde sensibility.',
         presentBy: 'LIFE IS NOICE',
         hold: 'R18',
         imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRupqFYXp2_L3vqkfvL0RwVC1mdTzsrBBNPPg&usqp=CAU'
@@ -216,7 +216,7 @@ export const similarData = [
         type: 'Hip-hop',
         time: '8 pm',
         price: '$40.00',
-        description: 'This is owesome concert',
+        description: 'The music of Fortress Europe is the sound of the Europe you don\'t often hear about. Lands of vampires, vodka, pickled cabbage and strange superstitions. Frenzied fiddles from Romania, heart-breaking lamentations from Hungary and infectious rhythms from Serbia are all combined with jagged surf guitars, cinematic strings, thunderous bass, and an experimental, avant-garde sensibility.',
         presentBy: 'LIFE IS NOICE',
         hold: 'R18',
         imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR_gRdYzJ0RMLUE_fw4jBCcpSlIcb0BoaOGig&usqp=CAU'
@@ -230,7 +230,7 @@ export const similarData = [
         type: 'Hip-hop',
         time: '8 pm',
         price: '$40.00',
-        description: 'This is owesome concert',
+        description: 'The music of Fortress Europe is the sound of the Europe you don\'t often hear about. Lands of vampires, vodka, pickled cabbage and strange superstitions. Frenzied fiddles from Romania, heart-breaking lamentations from Hungary and infectious rhythms from Serbia are all combined with jagged surf guitars, cinematic strings, thunderous bass, and an experimental, avant-garde sensibility.',
         presentBy: 'LIFE IS NOICE',
         hold: 'R18',
         imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTZ6Fz5OnRvBbcz92cWUz9HknrI65NIM8LUOg&usqp=CAU'
@@ -244,7 +244,7 @@ export const similarData = [
         type: 'Hip-hop',
         time: '8 pm',
         price: '$40.00',
-        description: 'This is owesome concert',
+        description: 'The music of Fortress Europe is the sound of the Europe you don\'t often hear about. Lands of vampires, vodka, pickled cabbage and strange superstitions. Frenzied fiddles from Romania, heart-breaking lamentations from Hungary and infectious rhythms from Serbia are all combined with jagged surf guitars, cinematic strings, thunderous bass, and an experimental, avant-garde sensibility.',
         presentBy: 'LIFE IS NOICE',
         hold: 'R18',
         imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQHEQv-BLbJLRfzv9OZHQSBlY7ZIYmXFlcJHQ&usqp=CAU'

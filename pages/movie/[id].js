@@ -10,34 +10,60 @@ const Movie = () => {
   return (
     <Layout>
       <div className="movie">
-        <div
-          className="header"
-        >
-        </div>
         {movie &&
-          <div className="content">
-            <div className="sidebar">
-              {/* <img
-              className="poster"
-              src={imageUrlFor(movie.poster)
-                .ignoreImageParams()
-                .width(500)}
-              alt={`Movie poster for ${movie.title}`}
-            /> */}
-              {/* <img src={movie.imageUrl} /> */}
-              {movie.name}
-              {movie.city}
-              {movie.state}
-              {movie.time}
-              {movie.type}
-              {movie.description}
-              {movie.hold}
-              {movie.price}
-              {movie.presentBy}
-              {movie.date}
-            </div>
-          </div>}
-          SIMILAR SHOWS
+          <div className="row">
+            
+              <div className="col-sm-3 col-md-6">
+                    {/* <img
+                    className="poster"
+                    src={imageUrlFor(movie.poster)
+                      .ignoreImageParams()
+                      .width(500)}
+                    alt={`Movie poster for ${movie.title}`}
+                  /> */}
+​
+                  <img src={movie.imageUrl} className="detail_image"/> 
+                  <br></br>
+                  <br></br>
+                  <div className="detail_1">R+B, Synth indie, Indie /alt</div>
+                  <br></br>
+                  <br></br>
+                  <br></br>
+                  <div className="detail_2">SET reminders</div><br></br>
+                  <div className="detail_3"><u>Google  Calendar </u>&nbsp;&nbsp;&nbsp;&nbsp;<u>iCal </u>&nbsp;&nbsp;&nbsp;&nbsp;<u>Outlook</u></div><br></br><br></br>
+                  <div className="detail_2">Share this</div>
+              </div>
+              
+              
+              <div className="col-sm-9 col-md-6" >
+              
+                  <div className="detail_name">{movie.name}</div>
+                  
+                  <div className="detail_city">{movie.city},{movie.state}</div>
+                  <br></br>
+                  <div className="detail_time">{movie.time}</div>
+                  <br></br>
+                  <div className="detail_price">{movie.price} </div>
+                  <hr className="new4"></hr>
+                  <button type="button" className="button">TICKETS</button>
+                  <br></br>
+                  <br></br>
+                  <div className="detail_description">{movie.description}</div>
+                  
+                  <br></br>
+                  <br></br><br></br>
+                  <div className="detail_present">Presented By {movie.presentBy}</div>
+                  
+              </div>
+            
+          </div>
+        
+        }
+        <br></br>
+        <br></br>
+        <hr className="new4"></hr>
+        <br></br>
+          <div className="similar">SIMILAR SHOWS</div>
           <div>
           <div className="movies">
             <div className="list">
@@ -54,7 +80,7 @@ const Movie = () => {
                       height={100 / movie.posterAspect}
                     />
                   )} */}
-                      <img src={movie.imageUrl} />
+                      <img src={movie.imageUrl}/>
                       <div style={{ paddingTop: "0.2em", color: "rgba(255,255,255,1)" }} >
                         {movie.name}
                         {movie.date}
@@ -77,6 +103,118 @@ const Movie = () => {
         </div>
       </div>
       <style jsx>{`
+      .col-sm-3.col-md-6{
+        border-right: 0.3rem solid white;
+      }
+      .detail_image{
+        width: 80%;
+        height: 80%;
+        margin-left:7%;
+      }
+      .row{
+        margin-top: 7%;
+        padding: 0 1rem;
+      }
+      .detail_time{
+        color: rgba(255,255,255,1);
+        font-family: Poppins;
+        font-size: 18px;
+        opacity: 1;
+        text-align: left;
+      }
+      .detail_name{
+        color:white;
+        font-family: Druk Cond;
+        font-size: 73px;
+        opacity: 1;
+        text-align: left;
+      }
+      .detail_city{
+        color: rgba(241,87,58,1);
+        position: relative;
+        font-family: Poppins;
+        font-size: 15px;
+        opacity: 1;
+        text-align: left;
+        
+      }
+      .detail_price{
+        color: rgba(255,255,255,1);
+        position: relative;
+        font-family: IBM Plex Mono;
+        font-size: 35px;
+        opacity: 1;
+        text-align: left;
+      }
+      .button{
+        background-color:#F1573A;
+        border: none;
+        color: white;
+        padding: 15px 32px !important;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px !important;
+        cursor: pointer !important;
+      }
+      .detail_description{
+        color: rgba(255,255,255,1);
+        font-family: Poppins;
+        font-size: 16px;
+        opacity: 1;
+        text-align: left;
+      }
+      .detail_1{
+        color: rgba(241,87,58,1);
+        position: absolute;
+        left: 9%;
+        font-family: IBM Plex Mono;
+        font-size: 13px;
+        opacity: 1;
+        text-align: left;
+      }
+      .detail_2{
+        color: rgba(255,255,255,1);
+        position: absolute;
+        font-family: IBM Plex Mono;
+        font-size: 15px;
+        opacity: 1;
+        left: 9%;
+        text-align: left;
+      }
+      .detail_3{
+        color: rgba(241,87,58,1);
+        position: absolute;
+        left: 9%;
+        font-family: IBM Plex Mono;
+        font-size: 15px;
+        opacity: 1;
+        text-align: left;
+      }
+      .detail_present{
+        color: white;
+        position: absolute;
+        font-family: IBM Plex Mono;
+        font-size: 15px;
+        opacity: 1;
+        text-align: left;
+      }
+      
+        hr.new4 {
+          border: 1px solid white;
+          margin-left: 5%;
+          margin-right: 5%;
+        }
+        .similar{
+          color: rgba(255,255,255,1);
+          position: absolute;
+          left: 8%;
+          font-family: Druk Cond;
+          font-size: 37px;
+          opacity: 1;
+          text-align: left;
+        }
         .content {
           display: flex;
           flex-direction: column-reverse;

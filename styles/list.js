@@ -5,7 +5,7 @@ export default css`
   .list {
     display: grid;
     margin: 0;
-    padding: 5%;
+    padding: 7%;
     grid-gap: 1rem;
     grid-template-columns: repeat(auto-fit, minmax(23%, 1fr));
   }
@@ -38,9 +38,11 @@ export default css`
   .list img {
     display: block;
     // height: auto;
-    // width: 100%;
-    height: 350px !important;
-    width: 250px !important;
+    width: 100%;
+    min-height: 250px;
+    max-height: 325px;
+    // height: 375px !important;
+    // width: 260px !important;
     margin-right: 0.5rem;
   }
 
