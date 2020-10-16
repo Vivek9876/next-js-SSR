@@ -26,15 +26,15 @@ const Footer = () => {
 
     return (
         <>
-            <div class="a155_783">
-                <div class="a155_784">
-                    <div class="a155_805"><span class="a155_785">Post  Digest </span></div>
-                    <span class="a155_786">Contact</span>
+            <div className="a155_783">
+                <div className="a155_784">
+                    <div className="a155_805"><span className="a155_785">Post  Digest </span></div>
+                    <span className="a155_786">Contact</span>
                 </div>
-                <div class="a165_7">
-                    <div class="a165_8">
-                        <div class="a165_9">
-                            <div class="a165_10"></div>
+                <div className="a165_7">
+                    <div className="a165_8">
+                        <div className="a165_9">
+                            <div className="a165_10"></div>
                         </div>
                     </div>
                 </div>
