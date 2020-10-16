@@ -55,8 +55,6 @@ export class Autocomplete extends Component {
                                      
                                      <div class="search-result-item-body">
                                          <div class="row"> 
-                                    {/* <img src={suggestion.imageUrl} className="suggestion"/> */}
-                                    {/* <div style={{ paddingTop: "0.2em", color: "rgba(255,255,255,1)" }} > */}
                                         <span>{suggestion.name}</span>
                                         <span>{suggestion.date}</span>
                                         <span>{suggestion.city}</span>

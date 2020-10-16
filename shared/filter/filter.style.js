@@ -577,10 +577,6 @@ export default css`
     border-bottom-right-radius: 3px;
     overflow: hidden;
   }
-  .name {
-    color: #fff;
-  }
-  
   .v135_141 {
     width: 24px;
     height: 18px;
@@ -623,10 +619,9 @@ export default css`
   right: 71.9%;
   top: 14%;
   bottom: 46.53%;
-  
   border: 1px solid #FFFFFF;
   box-sizing: border-box;
-      width: 370px;
+  width: 370px;
   }  
   .genres_regions_dates{
     left:4%;
@@ -640,13 +635,13 @@ export default css`
    .tags{
      margin-left:3%; 
      margin-top:4%; 
-font-family: IBM Plex Mono;
-font-size: 13px;
-font-style: normal;
-font-weight: 400;
-line-height: 17px;
-letter-spacing: 0em;
-text-align: left;
+      font-family: IBM Plex Mono;
+      font-size: 13px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 17px;
+      letter-spacing: 0em;
+      text-align: left;
 
    }
    .def{
