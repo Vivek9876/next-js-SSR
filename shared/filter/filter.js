@@ -5,7 +5,7 @@ import Regions from "./component/regions"
 import Dates from "./component/dates"
 import Tags from "./common/tags";
 import Link from "next/link";
-
+// code for filtering genres,regions and dates
 const Filters = () => {
 
     return (

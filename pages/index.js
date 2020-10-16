@@ -4,7 +4,7 @@ import Layout from "../components/Layout";
 import listStyles from "../styles/list";
 import Filters from "../shared/filter/filter";
 import { concertData } from "../data/data";
-
+//  code for main page
 const Detail = ({ movies }) => {
   return (
     <Layout>

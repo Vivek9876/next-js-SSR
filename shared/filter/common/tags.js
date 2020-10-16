@@ -3,7 +3,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import Chip from '@material-ui/core/Chip';
 import Paper from '@material-ui/core/Paper';
 import FilterStyle from "../filter.style";
-// import styled from '@emotion/styled';
+// code for getting tags
 const useStyles = makeStyles((theme) => ({
     root: {
         display: 'flex',

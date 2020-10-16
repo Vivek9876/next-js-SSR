@@ -5,7 +5,7 @@ import Filters from "../shared/filter/filter";
 import { eventTime, concertData } from "../data/data";
 import Link from "next/link";
 import { useRouter } from 'next/router'
-
+// code for displaying schedule
 const Schedule = () => {
     const router = useRouter()
 

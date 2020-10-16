@@ -3,13 +3,13 @@ import Layout from "../../components/Layout";
 import listStyles from "../../styles/list";
 import { useRouter } from 'next/router';
 import { concertData, similarData } from '../../data/data';
-
+// code for getting item detail
 const Detail = () => {
   const router = useRouter()
   const details = concertData.find((item) => item._id == router.query.id);
   return (
     <Layout>
-      <div className="details_person">
+      <div className="detail_item">
         {details &&
           <div className="row">
             
@@ -191,7 +191,7 @@ const Detail = () => {
           opacity: 1;
           text-align: left;
         }
-        .details_person > h2 {
+        .detail_item > h2 {
           margin: 2rem 0 0 0;
           padding: 0 0.5rem;
           border-bottom: 1px solid #ccc;
