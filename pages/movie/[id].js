@@ -2,7 +2,7 @@ import React from "react";
 import Layout from "../../components/Layout";
 import listStyles from "../../styles/list";
 import { useRouter } from 'next/router';
-import { concertData } from '../../data/data';
+import { concertData, similarData } from '../../data/data';
 
 const Movie = () => {
   const router = useRouter()
@@ -37,6 +37,44 @@ const Movie = () => {
               {movie.date}
             </div>
           </div>}
+          SIMILAR SHOWS
+          <div>
+          <div className="movies">
+            <div className="list">
+              {similarData.map(movie => (
+                <div key={movie._id} className="movie_padding">
+                  {/* <Link href="/movie/[id]" as={`/movie/${movie._id}`}> */}
+                    <a>
+                      {/* {movie.poster && (
+                    <img
+                      src={imageUrlFor(movie.poster)
+                        .ignoreImageParams()
+                        .width(300)}
+                      width="100"
+                      height={100 / movie.posterAspect}
+                    />
+                  )} */}
+                      <img src={movie.imageUrl} />
+                      <div style={{ paddingTop: "0.2em", color: "rgba(255,255,255,1)" }} >
+                        {movie.name}
+                        {movie.date}
+                        {movie.city}
+                        {movie.state}
+                        {movie.type}
+                      </div>
+                      {/* <h3 style={{ color: "rgba(255,255,255,1)" }}>{movie.title}</h3>
+                  {movie.director && (
+                    <span style={{ color: "rgba(255,255,255,1)" }} className="movies-list__directed-by">
+                      Directed by {movie.director}
+                    </span>
+                  )} */}
+                    </a>
+                  {/* </Link> */}
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
       </div>
       <style jsx>{`
         .content {
