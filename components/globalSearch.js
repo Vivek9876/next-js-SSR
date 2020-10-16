@@ -45,24 +45,29 @@ export class Autocomplete extends Component {
         if (showSuggestions && userInput) {
             if (filteredSuggestions.length) {
                 suggestionsListComponent = (
-                    <ul class="suggestions">
+                    <div className="col-md-6">
                         {filteredSuggestions.map((suggestion, index) => {
 
                             return (
-                                <li key={suggestion.name} onClick={onClick}>
-                                    {suggestion.name}
-                                    <img src={suggestion.imageUrl} />
-                                    <div style={{ paddingTop: "0.2em", color: "rgba(255,255,255,1)" }} >
-                                        {suggestion.name}
-                                        {suggestion.date}
-                                        {suggestion.city}
-                                        {suggestion.state}
-                                        {suggestion.type}
+                                <section key={suggestion.name} className="search-result-item" onClick={onClick}  style={{backgroundColor:"#eee",marginLeft:"-8%"}}>
+                                    <a class="image-link" href="#"><img src={suggestion.imageUrl} className="suggestion"/>
+                                    </a>
+                                     
+                                     <div class="search-result-item-body">
+                                         <div class="row"> 
+                                    {/* <img src={suggestion.imageUrl} className="suggestion"/> */}
+                                    {/* <div style={{ paddingTop: "0.2em", color: "rgba(255,255,255,1)" }} > */}
+                                        <span>{suggestion.name}</span>
+                                        <span>{suggestion.date}</span>
+                                        <span>{suggestion.city}</span>
+                                        <span>{suggestion.state}</span>
+                                        <span>{suggestion.type}</span>
                                     </div>
-                                </li>
+                                    </div>
+                                </section>
                             );
                         })}
-                    </ul>
+                     </div>
                 );
             } else {
                 suggestionsListComponent = (

@@ -16,7 +16,7 @@ export default function Layout(props) {
       <div className="col-md-12">
         <span className="d-inline-block" style={{ color: "white" }}><h2 className="heading">PostUp</h2></span>
         <div className="col-md-6 try d-inline-block">
-          <Search suggestions={concertData} />
+        <Search suggestions={concertData} />
         </div>
         <div className="col-md-6 shows">
           <span className="a133_812">Shows</span>
@@ -26,6 +26,7 @@ export default function Layout(props) {
           </div>
         </div>
       </div>
+      
       <div id="main">{props.children}</div>
       <footer>
         <Footer />
@@ -194,15 +195,6 @@ export default function Layout(props) {
           -moz-osx-font-smoothing: grayscale;
           color: #2c3e50;
           padding: 3.5rem 0 0;
-        }
-        body {
-          background-color:#1c1c1c;
-          margin: 0;
-          font-family: "Avenir", Helvetica, Arial, sans-serif;
-          -webkit-font-smoothing: antialiased;
-          -moz-osx-font-smoothing: grayscale;
-          color: #2c3e50;
-          padding: 3.5rem 0 0;
           overflow-x:hidden;
         }
         .MuiPopover-paper.MuiPaper-elevation8 {
@@ -223,14 +215,116 @@ export default function Layout(props) {
     .MuiAutocomplete-hasClearIcon .MuiAutocomplete-inputRoot {
       color: white;
   }
-  // .MuiSvgIcon-root {
-  //   color: white;
-  // }
     .MuiTypography-body1 {
       font-size: 0.8rem !important;
       line-height: 1 !important;
       margin-left: -8px !important;
   }
+  .suggestion{
+    display: block;
+    width: 100%;
+    min-height: 250px;
+    max-height: 325px;
+    margin-right: 0.5rem;
+}
+  .search-result-categories>li>a {
+      color: #b6b6b6;
+      font-weight: 400
+  }
+  
+  .search-result-categories>li>a:hover {
+      background-color: #ddd;
+      color: #555
+  }
+  
+  .search-result-categories>li>a>.glyphicon {
+      margin-right: 5px
+  }
+  
+  .search-result-categories>li>a>.badge {
+      float: right
+  }
+  
+  .search-results-count {
+      margin-top: 10px
+  }
+  
+  .search-result-item {
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 4px
+  }
+  
+  .search-result-item:after,
+  .search-result-item:before {
+      content: " ";
+      display: table
+  }
+  
+  .search-result-item:after {
+      clear: both
+  }
+  
+  .search-result-item .image-link {
+      display: block;
+      overflow: hidden;
+      border-top-left-radius: 4px;
+      border-bottom-left-radius: 4px
+  }
+  
+  @media (min-width:768px) {
+      .search-result-item .image-link {
+          display: inline-block;
+          margin: -20px 0 -20px -20px;
+          float: left;
+          width: 200px
+      }
+  }
+  
+  @media (max-width:767px) {
+      .search-result-item .image-link {
+          max-height: 200px
+      }
+  }
+  
+  .search-result-item .image {
+      max-width: 100%
+  }
+  
+  .search-result-item .info {
+      margin-top: 2px;
+      font-size: 12px;
+      color: #999
+  }
+  
+  .search-result-item .description {
+      font-size: 13px
+  }
+  
+  .search-result-item+.search-result-item {
+      margin-top: 20px
+  }
+  
+  @media (min-width:768px) {
+      .search-result-item-body {
+          margin-left: 200px
+      }
+  }
+  
+  .search-result-item-heading {
+      font-weight: 400
+  }
+  
+  .search-result-item-heading>a {
+      color: #555
+  }
+  
+  @media (min-width:768px) {
+      .search-result-item-heading {
+          margin: 0
+      }
+  }
+  
       `}</style>
     </div>
   );
