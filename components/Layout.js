@@ -3,6 +3,7 @@ import Footer from '../shared/Footer/footer';
 import Search from './globalSearch';
 // import "bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { concertData } from '../data/data';
 
 export default function Layout(props) {
   return (
@@ -15,7 +16,7 @@ export default function Layout(props) {
       <div className="col-md-12">
         <span className="d-inline-block" style={{ color: "white" }}><h2 className="heading">PostUp</h2></span>
         <div className="col-md-6 try d-inline-block">
-          <Search />
+          <Search suggestions={concertData} />
         </div>
         <div className="col-md-6 shows">
           <span className="a133_812">Shows</span>
