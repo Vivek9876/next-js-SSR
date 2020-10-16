@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import footerStyle from "./footer.style";
 import Modal from '@material-ui/core/Modal';
-
+import RadioButton from "../filter/common/commonRadioButton"
 const Footer = () => {
 
     const [openModal, setOpenmodal] = useState(false);
@@ -17,25 +17,28 @@ const Footer = () => {
     const body = (
         // style will needs to be apply in footer.style.js
         <div className="">
-            <h2>Text in a modal</h2>
+            Genres
+            <RadioButton type="typeName" />
+            Regions
+            <RadioButton type="cityName" />
         </div>
     );
 
     return (
         <>
-         <div class="a155_783">
-            <div class="a155_784">
-               <div class="a155_805"><span class="a155_785">Post  Digest </span></div>
-               <span class="a155_786">Contact</span>
+            <div className="a155_783">
+                <div className="a155_784">
+                    <div className="a155_805"><span className="a155_785">Post  Digest </span></div>
+                    <span className="a155_786">Contact</span>
+                </div>
+                <div className="a165_7">
+                    <div className="a165_8">
+                        <div className="a165_9">
+                            <div className="a165_10"></div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="a165_7">
-               <div class="a165_8">
-                  <div class="a165_9">
-                     <div class="a165_10"></div>
-                  </div>
-               </div>
-            </div>
-         </div>
             This is Footer
             <div>
                 <span className="postDigest" onClick={handleOpen}>Post Digest</span>

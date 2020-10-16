@@ -2,7 +2,8 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Chip from '@material-ui/core/Chip';
 import Paper from '@material-ui/core/Paper';
-
+import FilterStyle from "../filter.style";
+import styled from '@emotion/styled';
 const useStyles = makeStyles((theme) => ({
     root: {
         display: 'flex',
@@ -43,13 +44,9 @@ const Tags =  () => {
                     </li>
                 );
             })}
-            <span className="a133_814 d-inline-block" style={{color:"#f1573a"}}>💖 SAVE THIS SEARCH</span>
+            <span className="a133_814 d-inline-block tag-padding" style={{color:"#f1573a"}}>💖 SAVE THIS SEARCH</span>
         </ul>
     );
 }
-<style jsx>{`
-.abc{
-    margin-top:10%;
-}
-`}</style>
+<style jsx>{FilterStyle}</style>
 export default Tags;
