@@ -1,24 +1,8 @@
 import React from "react";
 import Link from "next/link";
 import Layout from "../../components/Layout";
-import sanity from "../../lib/sanity";
 import listStyles from "../../styles/list";
 import imageUrlFor from "../../utils/imageUrlFor";
-
-const personsQuery = `*[_type == "person"] { _id }`;
-
-const singlePersonQuery = `*[_type == "person" && _id == $id] {
-  _id,
-  name,
-  image,
-  "actedIn": *[_type == "movie" && references(^._id)] {
-    _id,
-    title,
-    releaseDate,
-    poster
-  }
-}[0]
-`;
 
 const Person = ({ person }) => {
   return (
@@ -99,24 +83,6 @@ const Person = ({ person }) => {
       <style jsx>{listStyles}</style>
     </Layout>
   );
-};
-
-export const getStaticPaths = async () => {
-  // Get the paths we want to pre-render based on persons
-  const persons = await sanity.fetch(personsQuery);
-  const paths = persons.map(person => ({
-    params: { id: person._id }
-  }));
-
-  // We'll pre-render only these paths at build time.
-  // { fallback: false } means other routes should 404.
-  return { paths, fallback: false };
-};
-
-// This function gets called at build time on server-side.
-export const getStaticProps = async ({ params }) => {
-  const person = await sanity.fetch(singlePersonQuery, { id: params.id });
-  return { props: { person } };
 };
 
 export default Person;

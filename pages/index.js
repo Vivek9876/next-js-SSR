@@ -1,21 +1,9 @@
 import React from "react";
 import Link from "next/link";
 import Layout from "../components/Layout";
-import sanity from "../lib/sanity";
 import listStyles from "../styles/list";
-import imageUrlFor from "../utils/imageUrlFor";
 import Filters from "../shared/filter/filter";
 import { concertData } from "../data/data";
-
-const query = `*[_type == "movie"] {
-  _id,
-  title,
-  releaseDate,
-  poster,
-  "posterAspect": poster.asset->.metadata.dimensions.aspectRatio,
-  "director": crewMembers[job == "Director"][0].person->name
-}[0...50]
-`;
 
 const Movies = ({ movies }) => {
   return (
@@ -38,15 +26,15 @@ const Movies = ({ movies }) => {
                       height={100 / movie.posterAspect}
                     />
                   )} */}
-                  <img src={movie.imageUrl}/>
-                    <div style={{ paddingTop: "0.2em", color: "rgba(255,255,255,1)" }} >
-                      {movie.name}
-                      {movie.date}
-                      {movie.city}
-                      {movie.state}
-                      {movie.type}
-                    </div>
-                    {/* <h3 style={{ color: "rgba(255,255,255,1)" }}>{movie.title}</h3>
+                  <img src={movie.imageUrl} />
+                  <div style={{ paddingTop: "0.2em", color: "rgba(255,255,255,1)" }} >
+                    {movie.name}
+                    {movie.date}
+                    {movie.city}
+                    {movie.state}
+                    {movie.type}
+                  </div>
+                  {/* <h3 style={{ color: "rgba(255,255,255,1)" }}>{movie.title}</h3>
                   {movie.director && (
                     <span style={{ color: "rgba(255,255,255,1)" }} className="movies-list__directed-by">
                       Directed by {movie.director}
@@ -56,9 +44,9 @@ const Movies = ({ movies }) => {
               </Link>
             </div>
           ))}
-            </div>
+        </div>
       </div>
-        <style jsx>{`
+      <style jsx>{`
         .movies {
           padding: 1rem;
           margin-top:-3%;
@@ -68,16 +56,9 @@ const Movies = ({ movies }) => {
           font-size: 1rem;
         }
       `}</style>
-        <style jsx>{listStyles}</style>
+      <style jsx>{listStyles}</style>
     </Layout>
   );
-};
-
-export const getStaticProps = async () => {
-  const movies = await sanity.fetch(query);
-  return {
-        props: { movies} // will be passed to the page component as props
-  };
 };
 
 export default Movies;

@@ -1,6 +1,4 @@
 import Head from "next/head";
-import Link from "next/link";
-import GithubCorner from "./GithubCorner";
 import Footer from '../shared/Footer/footer';
 import Search from './globalSearch';
 // import "bootstrap";
@@ -15,9 +13,8 @@ export default function Layout(props) {
         <title>POST Up</title>
       </Head>
       <div className="col-md-12">
-       <span className="d-inline-block" style={{color:"white"}}><h2 className="heading">PostUp</h2></span>
+        <span className="d-inline-block" style={{ color: "white" }}><h2 className="heading">PostUp</h2></span>
         <div className="col-md-6 try d-inline-block">
-          {/* <span className="a133_780">Try artist, date, genre or venue</span> */}
           <Search />
         </div>
         <div className="col-md-6 shows">
@@ -27,28 +24,10 @@ export default function Layout(props) {
             <span className="">💖</span><span style={{ color: "white" }}> Saved</span>
           </div>
         </div>
-        {/* <Link href="/">
-          <a>Movies</a>
-        </Link>
-        <Link href="/people">
-          <a>People</a>
-        </Link> */}
       </div>
-      {/* <GithubCorner /> */}
       <div id="main">{props.children}</div>
       <footer>
         <Footer />
-        {/* <a href="http://sanity.io">
-          <img src="/sanity-logo.svg" alt="Sanity Logo" />
-        </a>
-        +
-        <a href="https://github.com/zeit/next.js" alt="NextJs Logo" >
-          <img
-            className="next"
-            src="/nextjs-logo.svg"
-          />
-        </a>
-        = 💖 */}
       </footer>
       <style jsx>{`
         footer {

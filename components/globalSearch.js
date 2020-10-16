@@ -11,14 +11,10 @@ export default function Search() {
             options={top100Films}
             getOptionLabel={(option) => option.title}
             style={{ width: 300 }}
-            renderInput={(params) => <><SearchIcon /><TextField {...params} placeholder="search"></TextField></>}
+            renderInput={(params) => <><SearchIcon /><TextField {...params} placeholder="Try artist, date, genre or venue"></TextField></>}
         />
     );
 }
 const top100Films = [
     { title: 'The Shawshank Redemption', year: 1994 },
-    { title: 'The Godfather', year: 1972 },
-    { title: 'The Godfather: Part II', year: 1974 },
-    { title: 'The Dark Knight', year: 2008 },
-    { title: '12 Angry Men', year: 1957 },
-    { title: "Schindler's List", year: 1993 }]
+]

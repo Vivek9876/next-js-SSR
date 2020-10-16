@@ -1,17 +1,8 @@
 import React from "react";
 import Link from "next/link";
 import Layout from "../components/Layout";
-import sanity from "../lib/sanity";
 import listStyles from "../styles/list";
 import imageUrlFor from "../utils/imageUrlFor";
-
-const query = `*[_type == "person"] {
-  _id,
-  name,
-  image,
-  "imageAspect": image.asset->.metadata.dimensions.aspectRatio,
-}[0...50]
-`;
 
 const People = ({ people }) => {
   return (
@@ -50,12 +41,5 @@ const People = ({ people }) => {
     </Layout>
   );
 };
-
-export const getStaticProps = async () => {
-  const people = await sanity.fetch(query);
-  return {
-    props: { people } // will be passed to the page component as props
-  };
-}
 
 export default People;
